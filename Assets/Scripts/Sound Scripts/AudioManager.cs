@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Audio;
+﻿using UnityEngine;
 using System;
-using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -50,10 +46,5 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.loop = s.loop;
         }
-    }
-
-    void Start()
-    {
-        Play("OST");
     }
 }

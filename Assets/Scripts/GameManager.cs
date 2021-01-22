@@ -2,9 +2,10 @@
 
 public class GameManager : MonoBehaviour
 {
-    public int points = 0;
     public static GameManager instance;
-    float timer;
+    
+    [HideInInspector]
+    public float timer;
 
     void Awake()
     {

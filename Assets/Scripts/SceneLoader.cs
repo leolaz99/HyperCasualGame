@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
     /// <summary>
     /// Funzione per andare alla schermata di sconfitta
     /// </summary>
-    public void LoseScreen()
+    public void Lose()
     {
     }
 
@@ -19,16 +19,12 @@ public class SceneLoader : MonoBehaviour
     {
     }
 
-    /// <summary>
-    /// Funzione per uscire dal gioco
-    /// </summary>
-    public void ExitGame()
+    public void Play()
     {
-        Application.Quit();
-    } 
+        SceneManager.LoadScene("Game");
+    }
 
-
-    private void Awake()
+    void Awake()
     {
         if (instance == null)
             instance = this;
