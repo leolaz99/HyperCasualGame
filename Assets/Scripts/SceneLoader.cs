@@ -10,18 +10,13 @@ public class SceneLoader : MonoBehaviour
     /// </summary>
     public void Lose()
     {
+        SceneManager.LoadScene("GameOver");
     }
-
-    /// <summary>
-    /// Funzione per ricominciare il gioco
-    /// </summary>
-    public void Retry()
-    {
-    }
-
+    
     public void Play()
-    {
+    {    
         SceneManager.LoadScene("Game");
+        GameManager.instance.timer = 0;
     }
 
     void Awake()
