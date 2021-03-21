@@ -14,9 +14,14 @@ public class SceneLoader : MonoBehaviour
     }
     
     public void Play()
-    {    
-        SceneManager.LoadScene("Game");
+    {   
+        SceneManager.LoadScene("Game");   
+    }
+
+    public void Restart()
+    {
         GameManager.instance.timer = 0;
+        SceneManager.LoadScene("Game");              
     }
 
     void Awake()

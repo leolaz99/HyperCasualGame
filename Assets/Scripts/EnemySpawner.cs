@@ -9,8 +9,11 @@ public class EnemySpawner : MonoBehaviour
     GameObject enemy;
     ObjectPooler pooling = new ObjectPooler(true);
 
+    Camera cam;
+
     void Awake()
     {
+        cam = FindObjectOfType<Camera>();
         pooling.Init(prefab, 7);
     }
 
@@ -22,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
         {     
             enemy = pooling.Instantiate(prefab);
             float rand = Random.Range(0.05f, 0.95f);
-            enemy.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(rand, 1f, 1f));
+            enemy.transform.position = cam.ViewportToWorldPoint(new Vector3(rand, 1f, 1f));
             spawnTimer = 0;
         }
     }
