@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 235567694}
   - component: {fileID: 235567696}
   - component: {fileID: 235567695}
+  - component: {fileID: 235567697}
   m_Layer: 5
   m_Name: Points Value
   m_TagString: Untagged
@@ -301,6 +302,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235567693}
   m_CullTransparentMesh: 0
+--- !u!114 &235567697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235567693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2.2, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &291644057
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,12 +597,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 9975bf7e66057cc4cb3f6f33413a252b, type: 3}
+  m_Color: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 16, y: 12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -600,8 +616,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805016490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.373, y: 0.4934, z: 0}
-  m_LocalScale: {x: 89.00818, y: 100, z: 5}
+  m_LocalPosition: {x: 0.04, y: 0.01, z: 0}
+  m_LocalScale: {x: 0.74517673, y: 0.8372005, z: 0.041860025}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -683,6 +699,7 @@ GameObject:
   - component: {fileID: 1160933829}
   - component: {fileID: 1160933831}
   - component: {fileID: 1160933830}
+  - component: {fileID: 1160933832}
   m_Layer: 5
   m_Name: Points Text
   m_TagString: Untagged
@@ -751,6 +768,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160933828}
   m_CullTransparentMesh: 0
+--- !u!114 &1160933832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160933828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1235098341
 GameObject:
   m_ObjectHideFlags: 0
